@@ -65,5 +65,8 @@ else
    fi
 fi
 
+#copy on aws s3 
+aws sts get-caller-identity
+aws s3 cp logs/monitor.log s3://bucket name/
 	
 
